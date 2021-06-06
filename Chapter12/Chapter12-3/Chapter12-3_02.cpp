@@ -17,6 +17,7 @@ class B : public A
 {
 public:
 	void print() { cout << "B" << endl; }
+	// 원래 return type 다르면 override 불가능한데, 상속 관계의 클래스는 return 가능
 	virtual B* getThis()
 	{
 		cout << "B::getThis()" << endl;
